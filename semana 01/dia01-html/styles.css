@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*
+font-family: "Fraunces", serif;
+font-family: "Montserrat", sans-serif;
+*/
+
+body {
+  margin: 0;
+
+  background-color: hsl(30, 38%, 92%);
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+
+  display: flex; /* Flexbox */
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+}
+
+main {
+  /* border: 3px solid red; */
+
+  width: 650px;
+  min-height: 400px;
+
+  display: flex;
+
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.photo {
+  /* border: 5px solid green; */
+
+  width: 350px;
+
+  background-image: url(./images/image-product-desktop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.content {
+  /* border: 5px solid blue; */
+
+  width: 300px;
+
+  background-color: hsl(0, 0%, 100%);
+
+  padding: 28px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.content h3 {
+  margin: 0;
+
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 7px;
+  color: hsl(228, 12%, 48%);
+}
+
+.content h1 {
+  margin: 0;
+
+  font-family: "Fraunces", serif;
+  font-size: 42px; /* 14px * 3 = 42px */
+  line-height: 1;
+  color: hsl(212, 21%, 14%);
+}
+
+.content p {
+  margin: 0;
+
+  font-weight: 500;
+  line-height: 1.5;
+  color: hsl(228, 12%, 48%);
+  
+  /* text-align: justify; */
+}
+
+.content div {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.content span {
+  font-family: "Fraunces", serif;
+  font-size: 32px;
+  font-weight: 700;
+  color: hsl(158, 36%, 37%);
+}
+
+.content s {
+  color: hsl(228, 12%, 48%);
+}
+
+.content button {
+  border: 0;
+
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  background-color: hsl(158, 36%, 37%);
+  color: hsl(0, 0%, 100%);
+
+  padding: 14px;
+
+  display: flex;
+  justify-content: center;
+  gap: 7px;
+
+  cursor: pointer;
+  border-radius: 7px;
+}
