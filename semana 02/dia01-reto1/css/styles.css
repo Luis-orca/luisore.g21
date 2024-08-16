@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+  
+    background-color: hsl(148, 38%, 91%);
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    height: 100vh;
+  }
+  
+  .contact-form {
+    width: 400px;
+  
+    background-color: hsl(0, 0%, 100%);
+    padding: 32px;
+  
+    border-radius: 16px;
+  }
+  
+  h1 {
+    margin: 0;
+    margin-bottom: 32px;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 16px;
+  }
+  
+  label input,
+  label textarea {
+    display: block;
+    width: 100%;
+    margin-top: 8px;
+    padding: 8px;
+  }
+  
+  .row {
+    display: flex;
+    gap: 16px;
+  }
+  
+  .query-type {
+    border: 1px solid rgb(9, 9, 9);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
