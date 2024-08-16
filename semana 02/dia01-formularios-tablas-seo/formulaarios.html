@@ -123,10 +123,103 @@
         <select name="comidas">
             <option value="fr">Francesa</option>
             <option value="it">Italiana</option>
-            <option value="">Francesa</option>
+            <option value="ja">Japonesa</option>
+            <option value="pe">Peruana</option>
+            <option value="th">Tailandesa</option>
         </select>
     </label>
+    
+    <input type="submit" value="Guardar" />
   </form>
+
+  <form>
+    <h2>Checkboxes</h2>
+
+    <h3>Lenguajes de preferencia:</h3>
+
+    <label>
+      <input type="checkbox" name="english" value="en" />
+      Inglés
+    </label>
+    <label>
+      <input type="checkbox" name="spanish" value="es" />
+      Español
+    </label>
+    <label>
+      <input type="checkbox" name="dothraki" value="do" />
+      Dothraki
+    </label>
+
+    <input type="submit" value="Guardar" />
+   </form>
+
+   <form>
+    <h2>Radio buttons</h2>
+
+    <h3>Lenguajes de preferencia:</h3>
+
+    <label>
+      <input type="radio" name="language1" value="en" />
+      Inglés
+    </label>
+    <label>
+      <input type="radio" name="language1" value="es" />
+      Español
+    </label>
+    <label>
+      <input type="radio" name="language1" value="do" />
+      Dothraki
+    </label>
+    <label>
+      <input type="radio" name="language1" value="kl" />
+      Klingon
+    </label>
+    <label>
+      <input type="radio" name="language1" value="qu" />
+      Quechua
+    </label>
+
+    <input type="submit" value="Guardar" />
+   </form>
+
+   <form>
+    <h2>Validaciones</h2>
+
+    <label>
+      Nombre (obligatorio)
+      <input type="text" name="nombre" required minlength="3" maxlength="15" />
+    </label>
+
+    <label>
+      Email
+      <input type="email" name="email" required />
+    </label>
+
+    <label>
+      Edad
+      <input type="number" name="edad" required min="1" max="99" />
+    </label>
+
+    <label>
+      Teléfono
+      <input type="tel" name="telefono" required placeholder="+51 999 999 999" pattern="\+[0-9]{2} [0-9]{3} [0-9]{3} [0-9]{3}" />
+      <p>+51 999999999</p>
+    </label>
+
+    <label>
+      Comidas
+      <select name="comidas" required>
+        <option value="">Selecciona tu comida favorita...</option>
+        <option value="fr">Francesa</option>
+        <option value="it">Italiana</option>
+        <option value="jp">Japonesa</option>
+        <option value="pe">Peruana</option>
+        <option value="th">Tailandesa</option>
+      </select>
+    </label>
+
+    <input type="submit" value="Guardar" />
+   </form>
 </main>
 </body>
 </html>
