@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formularios</title>
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+>
+</head>
+<body>
+  <h1>Formularios + Input + Validaciones</h1>
+
+  <form>
+    <h2>Input</h2>
+
+    <label for="">Input tipo texto</label>
+    <input type="text" placeholder="ingresa algun texto." id="text1" />
+    
+    <label>
+      Input (solo lectura)
+      <input type="text" placeholder="Input de solo lectura" readonly value="copia este texto" />
+    </label>
+
+    <label>
+      Input (desactivado)
+      <input type="text" placeholder="Input desactivado" disabled value="hola a todos" />
+    </label>
+
+    <label>
+        Input tipo number
+        <input type="number" placeholder="edad Ej. 18" name="edad" id="name" />
+      </label>
+
+      <label>
+        Input tipo email
+        <input type="email" placeholder="Correo Ej. luisore@gamil.com" name="mail" />
+      </label>
+
+      <label>
+        Input tipo range (edad)
+        <input type="range" name="range_edad" min="1" max="100" step="10" />
+      </label>
+
+      <label>
+        Input tipo tel
+        <input type="tel" placeholder="(51) 999 999 999"  />
+      </label>
+
+      <label>
+        Input tipo url
+        <input type="url" placeholder="sitio web" />
+      </label>
+
+      <label>
+        Input tipo password
+        <input type="password" placeholder="password" />
+      </label>
+      
+      <label>
+        Input tipo color
+        <input type="color" />
+      </label>
+
+      <label>
+        Input tipo search
+        <input type="search" />
+      </label>
+
+      <label>
+        Input tipo file (seleccionar .jpg) uno a la vez
+        <input type="file" accept=".jpg .jpeg" />
+      </label>
+
+      <label>
+        Input tipo file (seleccionar multiples archivos)
+        <input type="file" multiple />
+      </label>
+
+      <input type="hidden" value="datos-ocultos" />
+      
+      
+      <input type="submit" value="Gurdar" />
+      <input type="reset" value="Limpiar" /> 
+  </form>
+
+  <form>
+    <h2>Input tipo fecha</h2>
+
+    <label>
+       input tipo datatime-local (Fecha y hora)
+       <input type="datetime-local" />
+    </label>
+
+    <label>
+        input tipo month (mes)
+        <input type="week" name="semana" />
+     </label>
+
+     <input type="submit" value="Guardar"/>
+
+  </form>
+
+  <form>
+    <h2>Textarea</h2>
+    <label>
+        <textarea placeholder="Escribe una descripcion sobre ti.." rows="4" name="biografia1"></textarea>
+    </label>
+
+    <label>
+        <textarea placeholder="Escribe una descripcion sobre ti.." rows="5" name="biografia1"></textarea>
+    </label>
+
+    <input type="submit" value="Guardar" />
+  </form>
+
+  <form>
+    <h2> Selects</h2>
+
+    <label>
+        comida favorita
+        <select name="comidas">
+            <option value="fr">Francesa</option>
+            <option value="it">Italiana</option>
+            <option value="">Francesa</option>
+        </select>
+    </label>
+  </form>
+</main>
+</body>
+</html>
