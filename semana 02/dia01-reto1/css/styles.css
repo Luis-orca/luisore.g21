@@ -1,50 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+
 body {
-    margin: 0;
-  
-    background-color: hsl(148, 38%, 91%);
-  
-    display: grid;
-    justify-content: center;
-    align-items: center;
-  
-    height: 100vh;
-  }
-  
-  .contact-form {
-    width: 400px;
-  
-    background-color: hsl(0, 0%, 100%);
-    padding: 32px;
-  
-    border-radius: 16px;
-  }
-  
-  h1 {
-    margin: 0;
-    margin-bottom: 32px;
-  }
-  
-  label {
-    display: block;
-    margin-bottom: 16px;
-  }
-  
-  label input,
-  label textarea {
-    display: block;
-    width: 100%;
-    margin-top: 8px;
-    padding: 8px;
-  }
-  
-  .row {
-    display: flex;
-    gap: 16px;
-  }
-  
-  .query-type {
-    border: 1px solid rgb(9, 9, 9);
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
+  margin: 0;
+
+  background-color: hsl(148, 38%, 91%);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+
+  font-family: "Karla", sans-serif;
+}
+
+.contact-form {
+  min-width: 400px;
+
+  background-color: hsl(0, 0%, 100%);
+  padding: 32px;
+
+  border-radius: 16px;
+}
+
+h1 {
+  margin: 0;
+  margin-bottom: 32px;
+  color: hsl(187, 24%, 22%);
+}
+
+label {
+  display: block;
+  margin-bottom: 16px;
+}
+
+label input,
+label textarea {
+  display: flex;
+
+  margin-top: 8px;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+.query-type {
+  border: 1px solid hsl(186, 15%, 59%);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 4px;
+  padding: 16px;
+  margin-top: 8px;
+  border-radius: 8px;
+}
+
+input[type='radio'] {
+  margin: 0;
+}
+
+input[type='text'],
+textarea {
+  border-radius: 8px;
+  border: 1px solid hsl(186, 15%, 59%);
+  padding: 16px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.required {
+  color: hsl(169, 82%, 27%);
+  font-weight: 700;
+}
+
+input[type='submit'] {
+  color: hsl(0, 0%, 100%);
+  background-color: hsl(169, 82%, 27%);
+  border: 1px solid hsl(169, 82%, 27%);
+  font-weight: 700;
+  border-radius: 8px;
+  width: 100%;
+  padding: 16px;
+}
