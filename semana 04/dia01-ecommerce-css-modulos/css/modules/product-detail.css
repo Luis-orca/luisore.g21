@@ -1,0 +1,17 @@
+/* PRODUCT DETAIL */
+
+.product-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+}
+
+@media(min-width: 768px) {
+  .product-detail {
+    flex-direction: row;
+
+    padding: 5rem 3rem;
+
+    gap: 5rem;
+  }
+}

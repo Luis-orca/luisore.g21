@@ -1,0 +1,149 @@
+/* PRODUCT */
+
+.product {
+  padding: 2.5rem 1.5rem;
+}
+
+.product__subtitle {
+  font-size: 1rem;
+  font-weight: var(--font-weight-bold);
+  text-transform: uppercase;
+  color: var(--neutral-dark-grayish-blue);
+}
+
+.product__title {
+  font-size: 2rem;
+  margin-top: 1rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--neutral-very-dark-blue);
+}
+
+.product__description {
+  color: var(--neutral-dark-grayish-blue);
+  line-height: 1.5;
+  margin-top: 1.5rem;
+}
+
+.product__price {
+  margin-top: 1.5rem;
+
+  display: flex;
+  gap: .5rem;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+@media(min-width: 768px) {
+  .product__price {
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+  }
+}
+
+.product__wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.product__amount {
+  font-size: 2rem;
+  font-weight: var(--font-weight-bold);
+  color: var(--neutral-very-dark-blue);
+}
+
+.product__discount {
+  background-color: var(--neutral-very-dark-blue);
+  color: var(--neutral-white);
+
+  padding: .1rem .5rem;
+  border-radius: .5rem;
+
+  font-weight: var(--font-weight-bold);
+}
+
+.product__price-with-discount {
+  font-size: 1.1rem;
+  font-weight: var(--font-weight-bold);
+
+  color: var(--neutral-dark-grayish-blue);
+  text-decoration: line-through;
+}
+
+.product__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.5rem;
+
+  margin-top: 2rem;
+}
+
+@media (min-width: 768px) {
+  .product__form {
+    flex-direction: row;
+  }
+}
+
+.product__quantity {
+  display: flex;
+
+  border-radius: .5rem;
+  overflow: hidden;
+
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .product__quantity {
+    max-width: 160px;
+  }
+}
+
+.product__quantity button,
+.product__quantity span {
+  width: 4rem;
+  height: 3.5rem;
+  border: none;
+  background-color: var(--neutral-light-grayish-blue);
+}
+
+.product__quantity button {
+  cursor: pointer;
+}
+
+.product__quantity span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: var(--font-weight-bold);
+  font-size: 1.1rem;
+
+  flex-grow: 1;
+}
+
+.product__add-to-cart {
+  border: none;
+  padding: 1.1rem 1rem;
+  border-radius: .5rem;
+
+  background-color: var(--primary-orange);
+  color: var(--neutral-very-dark-blue);
+  font-size: 1.1rem;
+  font-weight: var(--font-weight-bold);
+
+  cursor: pointer;
+
+  display: flex;
+  gap: .5rem;
+  justify-content: center;
+
+  width: 100%;
+}
+
+.product__add-to-cart svg path {
+  fill: var(--neutral-very-dark-blue);
+}

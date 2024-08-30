@@ -1,0 +1,11 @@
+/* UTILS */
+
+.wrapper {
+  width: min(100%, 1200px);
+
+  margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
