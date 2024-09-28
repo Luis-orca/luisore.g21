@@ -1,0 +1,11 @@
+.ejemplo {
+  background-color: red;
+}
+
+.btn-carrot {
+  background-color: orange;
+}
+
+.btn-carrot:hover {
+  background-color: orangered;
+}

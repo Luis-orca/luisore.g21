@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Listado de tareas</title>
+  <style>
+    .checked + span {
+      text-decoration: line-through;
+    }
+  </style>
+</head>
+<body>
+  <main class="task">
+    <h1>Listado de tareas</h1>
+
+    <section>
+      <input
+        type="text"
+        placeholder="Añade una nueva tarea"
+        class="task__input"
+      />
+      <button class="task__add">Añadir tarea</button>
+    </section>
+
+    <ul class="task__list">
+      <!--
+      <li>Tarea 1</li>
+      <li>Tarea 2</li>
+      <li>Tarea 3</li>
+      -->
+    </ul>
+  </main>
+
+  <script src="./main.js"></script>
+</body>
+</html>

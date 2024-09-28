@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de tareas - Completo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <main class="task w-96 mx-auto border rounded-lg shadow mt-10">
+    <section class="flex flex-col px-4 py-6">
+      <h1 class="text-xl font-bold text-gray-900 text-center mb-4">
+        Lista de tareas - Completo
+      </h1>
+
+      <label class="flex flex-col gap-1 mb-2">
+        Ingresa una tarea
+        <input
+          type="text"
+          class="task__input border border-gray-300 text-sm rounded-lg p-2 w-full"
+          placeholder="Ej. Aprender Javascript"
+        />
+      </label>
+
+      <div class="flex justify-end mb-4">
+        <button
+          class="task__clear border border-blue-700 font-medium text-sm p-1 px-3 text-blue-900 hover:bg-blue-700 hover:text-white rounded-lg duration-300"
+        >
+          Limpiar tareas completadas
+        </button>
+      </div>
+
+      <ul class="task__list flex flex-col"></ul>
+    </section>
+  </main>
+
+  <script src="./main.js"></script>
+</body>
+</html>

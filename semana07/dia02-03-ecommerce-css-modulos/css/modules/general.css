@@ -1,0 +1,27 @@
+/* GENERAL */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  /* border: 1px solid red; */
+}
+
+html {
+  font-size: var(--font-size);
+}
+
+body {
+  font-family: var(--font-primary);
+  /* color: var(--mi-color); */
+}
+
+img {
+  /* RWD para imágenes*/
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reto IMC (Indice de Masa Corporal)</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+  <main class="w-80 mx-auto mt-6 border rounded-lg overflow-hidden">
+    <h1 class="text-xl font-semibold text-center mb-4 p-4 bg-slate-200">Indice de Masa Corporal</h1>
+
+    <section class="flex flex-col gap-4 px-4">
+      <label class="flex flex-col gap-2">
+        Peso (KG)
+        <input id="peso" type="number" placeholder="Ej. 50" class="border px-3 py-2 rounded-md" value="" />
+      </label>
+      <label class="flex flex-col gap-2">
+        Altura (CM)
+        <input id="altura" type="number" placeholder="Ej. 170" class="border px-3 py-2 rounded-md" value="" />
+      </label>
+
+      <button id="calcular" class="bg-green-600 text-white p-2 rounded-md">Calcular</button>
+    </section>
+
+    <section id="resultado" class="mt-5 bg-yellow-400 text-yellow-900 p-3 rounded-md mx-4">
+      Tu Indice de Masa Corporal es ...
+    </section>
+  </main>
+
+  <script src="./main.js"></script>
+</body>
+</html>

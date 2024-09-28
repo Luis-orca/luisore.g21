@@ -1,0 +1,55 @@
+body {
+  background-color: #ddeeaa;
+
+  display: flex;
+  justify-content: center;
+  margin: 0;
+}
+
+.pokemon-app {
+  display: flex;
+  gap: 1rem;
+}
+
+.pokemon-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.pokemon-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.pokemon-item {
+  background-color: #aaddee;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: .5rem;
+  border-radius: .5rem;
+  border: 3px solid hsl(195, 80%, 65%);
+  min-width: 8rem;
+  text-transform: capitalize;
+}
+
+.pokemon-button,
+.pokemon-current-page {
+  background-color: hsl(195, 80%, 65%);;
+  border: none;
+  padding: .5rem;
+  cursor: pointer;
+}
+
+.pokemon-item__buttons {
+  display: flex;
+  gap: .2rem;
+}
+
+.is-favorite {
+  color: #dec62a;
+  fill: #dec62a;
+}

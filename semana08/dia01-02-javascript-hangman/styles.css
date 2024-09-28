@@ -1,0 +1,44 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+.container {
+  width: min(100% - 3rem, 400px);
+  margin: 0 auto;
+}
+
+.hangman {
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.hangman__title {
+  text-align: center;
+}
+
+.hangman__maskedword {
+  text-align: center;
+  font-size: 3rem;
+  margin-top: 1rem;
+}
+
+.hangman__buttons {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: .2rem;
+  margin-top: 2rem;
+}
+
+.hangman__result {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-weight: 800;
+  color: green;
+}
+
+.hidden {
+  display: none;
+}
